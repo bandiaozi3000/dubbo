@@ -1,0 +1,18 @@
+import java.util.ArrayList;
+
+public class Test {
+   public static void main(String[] args) {
+	 Student student1 = new Student(15);
+	 Student student2 = new Student(11);
+	 Student student3 = new Student(18);
+	 ArrayList<Student> arr = new ArrayList<Student>();
+	 arr.add(student1);
+	 arr.add(student2);
+	 arr.add(student3);
+	 for(Student stu:arr){
+		 if(stu.getAge()<16){
+			 arr.remove(stu);
+		 }
+	 }
+}
+}
